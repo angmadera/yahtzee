@@ -5,7 +5,7 @@ import "./App.css";
 class App extends Component {
   render() {
     return (
-      <div className='App'>
+      <div className="App">
         <Game />
       </div>
     );
@@ -13,3 +13,5 @@ class App extends Component {
 }
 
 export default App;
+
+//put not section in codepen

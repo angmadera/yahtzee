@@ -11,7 +11,7 @@ class Game extends Component {
     super(props);
     this.state = {
       dice: Array.from({ length: NUM_DICE }),
-      locked: Array(NUM_DICE).fill(false),
+      locked: Array(NUM_DICE).fill(false), //value you want to fill position in that array
       rollsLeft: NUM_ROLLS,
       scores: {
         ones: undefined,
@@ -34,6 +34,7 @@ class Game extends Component {
     this.toggleLocked = this.toggleLocked.bind(this);
   }
 
+  //
   roll(evt) {
     // roll dice whose indexes are in reroll
     this.setState((st) => ({
@@ -101,3 +102,9 @@ class Game extends Component {
 }
 
 export default Game;
+
+//responding to click event, ensuring that its happening when that click events occurs. the onclick function has an on click events
+//events are associated with certain html events (Events.target.value), forms, with buttons there is always a click event. When this is clicked, registering, and that event has occured, and when event occurs.
+//still need to pass that event to ensure that its still passing.
+//evt.prevent.default, preventing default behavior
+//three most common ones
